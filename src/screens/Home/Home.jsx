@@ -1,11 +1,14 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, SafeAreaView} from 'react-native';
 import styles from './Home.styles';
+import HeaderTabs from '../../components/HeaderTabs/HeaderTabs';
 const Home = ({navigation}) => {
   return (
-    <View style={styles.container}>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.header}>
+        <HeaderTabs />
+      </View>
+    </SafeAreaView>
   );
 };
 
